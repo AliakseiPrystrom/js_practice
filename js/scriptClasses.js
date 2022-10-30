@@ -79,14 +79,20 @@ console.log(counter);
 const{border,bg} = options.colors;
 console.log(border,bg);
 
+//array example...
 
+const arr =[1,2,3,4,5,6,7,8,9,0];
 
+for(let i = 0;i<arr.length;i++){
+    console.log(arr[i]);
+}
 
+for(let value of arr){
+    console.log(arr[value]);
+}
 
-
-
-
-
-
+arr.forEach(function(item,i,ar){
+    console.log(`${i}, ${item}, ${ar}`);
+});
 
 
